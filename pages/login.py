@@ -15,17 +15,45 @@ class LoginPage(QMainWindow):
         self.root_dir = root_dir
 
         # load file ui
-        ui_path = self.root_dir + "/GUI/login.ui"
+        ui_path = self.root_dir + "/ui/login.ui"
         uic.loadUi(ui_path, self)
 
         # bat su kien cho cac nut bam
-        # TODO
+        self.loginbutton.clicked.connect(
+            self.handle_login
+        )
+        self.register_2.clicked.connect(
+            self.goto_register
+        )
+
 
         # chay app
         self.show()
 
     # ------------------ xu ly su kien ------------------
-    # TODO
+    def handle_login(self):
+        # lay du lieu tu input form
+        email_input = (
+            self.answer1.text().strip()
+        )   
+        password_input = self.answer.text()
+         # validate du lieu
+        if self.__validate_input(email_input, password_input) is not None:
+            print(self.__validate_input(email_input, password_input))
+            # co loi -> bao loi
+            self.show_message(self.__validate_input(email_input, answer1_input)) # type: ignore
+            return  # khong lam gi nua
+        else:
+            # thanh cong -> chuyen sang home
+            self.__goto_home()
+
+    def goto_register(self):
+        from pages.signup import SignupPage
+
+        self.register_page = SignupPage(
+            main_window=self.main_window, root_dir=self.root_dir
+        )
+        self.close()  # ✅ đóng cửa sổ
     # ------------------ ham ho tro ------------------
     def __show_message(self, message):
         # Khởi tạo hộp thoại thông báo
