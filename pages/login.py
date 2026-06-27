@@ -41,7 +41,7 @@ class LoginPage(QMainWindow):
         if self.__validate_input(email_input, password_input) is not None:
             print(self.__validate_input(email_input, password_input))
             # co loi -> bao loi
-            self.show_message(self.__validate_input(email_input, answer1_input)) # type: ignore
+            self.show_message(self.__validate_input(email_input, password_input)) # type: ignore
             return  # khong lam gi nua
         else:
             # thanh cong -> chuyen sang home
@@ -55,7 +55,29 @@ class LoginPage(QMainWindow):
         )
         self.close()  # ✅ đóng cửa sổ
     # ------------------ ham ho tro ------------------
-    def __show_message(self, message):
+    def __goto_home(self):
+        from pages.home import HomePage
+
+        self.home_page = HomePage(main_window=self.main_window, root_dir=self.root_dir, cur_acc=account)
+        self.close()  # ✅ đóng cửa sổ
+
+    def __validate_input(self, email, password):
+        # kiem tra email
+        regex = r"^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+        if re.fullmatch(regex, email) is None:
+            return "Email khong hop le!"
+
+        # kiem tra password
+        if len(password) < 6:
+            return "Password phai tu 6 chu so tro len!"
+
+        # kiem tra khop tai khoan (mock data)
+        if email != account["email"] or password != account["password"]:
+            return "Email hoac password khong chinh xac!"
+
+        return None  # khong co loi
+    
+    def show_message(self, message):
         # Khởi tạo hộp thoại thông báo
         msg = QMessageBox()
         msg.setWindowTitle("Thông báo")

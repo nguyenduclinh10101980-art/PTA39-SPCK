@@ -122,6 +122,19 @@ rgb(112, 255, 191)</string>
      </property>
      <layout class="QVBoxLayout" name="verticalLayout">
       <item>
+       <widget class="QLabel" name="label_6">
+        <property name="styleSheet">
+         <string notr="true">font: 12pt &quot;MS Shell Dlg 2&quot;;</string>
+        </property>
+        <property name="text">
+         <string>Email:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="email"/>
+      </item>
+      <item>
        <widget class="QLabel" name="label_2">
         <property name="styleSheet">
          <string notr="true">font: 75 12pt &quot;MS Shell Dlg 2&quot;;</string>
@@ -132,7 +145,7 @@ rgb(112, 255, 191)</string>
        </widget>
       </item>
       <item>
-       <widget class="QLineEdit" name="lineEdit_5"/>
+       <widget class="QLineEdit" name="fullname"/>
       </item>
       <item>
        <widget class="QLabel" name="label_5">
@@ -145,7 +158,7 @@ rgb(112, 255, 191)</string>
        </widget>
       </item>
       <item>
-       <widget class="QLineEdit" name="lineEdit_2">
+       <widget class="QLineEdit" name="password">
         <property name="font">
          <font>
           <underline>false</underline>
@@ -153,6 +166,9 @@ rgb(112, 255, 191)</string>
         </property>
         <property name="cursor">
          <cursorShape>IBeamCursor</cursorShape>
+        </property>
+        <property name="echoMode">
+         <enum>QLineEdit::Password</enum>
         </property>
         <property name="cursorPosition">
          <number>0</number>
@@ -170,20 +186,11 @@ rgb(112, 255, 191)</string>
        </widget>
       </item>
       <item>
-       <widget class="QLineEdit" name="lineEdit_3"/>
-      </item>
-      <item>
-       <widget class="QLabel" name="label_6">
-        <property name="styleSheet">
-         <string notr="true">font: 12pt &quot;MS Shell Dlg 2&quot;;</string>
-        </property>
-        <property name="text">
-         <string>Email:</string>
+       <widget class="QLineEdit" name="confirm_password">
+        <property name="echoMode">
+         <enum>QLineEdit::Password</enum>
         </property>
        </widget>
-      </item>
-      <item>
-       <widget class="QLineEdit" name="lineEdit_4"/>
       </item>
       <item>
        <widget class="QLabel" name="label_7">
@@ -198,13 +205,20 @@ color: rgb(88, 110, 255);</string>
        </widget>
       </item>
       <item>
-       <widget class="QPushButton" name="pushButton">
+       <widget class="QPushButton" name="signupbutton">
         <property name="styleSheet">
          <string notr="true">font: 12pt &quot;MS Shell Dlg 2&quot;;
 background-color: rgb(223, 223, 223);</string>
         </property>
         <property name="text">
          <string>ĐĂNG KÍ</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="login">
+        <property name="text">
+         <string>Login</string>
         </property>
        </widget>
       </item>

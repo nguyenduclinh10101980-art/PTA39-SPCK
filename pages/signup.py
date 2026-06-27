@@ -35,10 +35,10 @@ class SignupPage(QMainWindow):
     def handle_register(self):
         # lay du lieu tu input form
         email_input = (
-            self.email1.text().strip()
+            self.email.text().strip()
         )  # lay du lieu tu email input, xoa khoang trang 2 dau
         password_input = self.password.text()
-        fullname_input = self.full_name.text()
+        fullname_input = self.fullname.text()
 
         # kiem tra fullname
         if fullname_input.strip() == "":
@@ -67,7 +67,7 @@ class SignupPage(QMainWindow):
         )
         self.close()  # ✅ đóng cửa sổ
     # ------------------ ham ho tro ------------------
-    def __show_message(self, message):
+    def show_message(self, message):
         # Khởi tạo hộp thoại thông báo
         msg = QMessageBox()
         msg.setWindowTitle("Thông báo")
@@ -78,3 +78,24 @@ class SignupPage(QMainWindow):
         msg.setStandardButtons(QMessageBox.StandardButton.Ok)  # Nút bấm OK
         # Hiển thị hộp thoại
         msg.exec()
+
+         # ------------------- ham ho tro (private) ---------------------
+    def __goto_home(self):
+        from pages.home import HomePage
+
+        self.home_page = HomePage(
+            main_window=self.main_window, root_dir=self.root_dir, cur_acc=account
+        )
+        self.close()  # ✅ đóng cửa sổ
+
+    def __validate_input(self, email, password):
+        # kiem tra email
+        regex = r"^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+        if re.fullmatch(regex, email) is None:
+            return "Email khong hop le!"
+
+        # kiem tra password
+        if len(password) < 6:
+            return "Password phai tu 6 chu so tro len!"
+
+        return None  # khong co loi
