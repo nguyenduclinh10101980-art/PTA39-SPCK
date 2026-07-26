@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>723</width>
-    <height>415</height>
+    <height>408</height>
    </rect>
   </property>
   <property name="baseSize">
@@ -77,6 +77,13 @@
         </spacer>
        </item>
        <item>
+        <widget class="QLabel" name="label_28">
+         <property name="text">
+          <string>Lịch sử giao dịch</string>
+         </property>
+        </widget>
+       </item>
+       <item>
         <widget class="QPushButton" name="logout">
          <property name="text">
           <string>LOGOUT</string>
@@ -101,7 +108,7 @@
        <bool>false</bool>
       </property>
       <property name="currentIndex">
-       <number>2</number>
+       <number>0</number>
       </property>
       <widget class="QWidget" name="trangchu_p">
        <widget class="QWidget" name="widget_2" native="true">
@@ -611,12 +618,189 @@
        <widget class="QWidget" name="widget_17" native="true">
         <property name="geometry">
          <rect>
-          <x>30</x>
-          <y>250</y>
-          <width>120</width>
-          <height>80</height>
+          <x>0</x>
+          <y>260</y>
+          <width>311</width>
+          <height>121</height>
          </rect>
         </property>
+        <property name="styleSheet">
+         <string notr="true">background: rgb(255, 0, 0)</string>
+        </property>
+        <widget class="QLabel" name="label_20">
+         <property name="geometry">
+          <rect>
+           <x>230</x>
+           <y>10</y>
+           <width>51</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Chăm tại nhà</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_22">
+         <property name="geometry">
+          <rect>
+           <x>200</x>
+           <y>80</y>
+           <width>111</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>67 triệu đồng(tùy loại )/1 năm</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_23">
+         <property name="geometry">
+          <rect>
+           <x>220</x>
+           <y>30</y>
+           <width>91</width>
+           <height>51</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Khám bệnh tại nhà ko cần đi tới thú y</string>
+         </property>
+         <property name="wordWrap">
+          <bool>true</bool>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="dat1">
+         <property name="geometry">
+          <rect>
+           <x>220</x>
+           <y>100</y>
+           <width>56</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Đặt</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_21">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>201</width>
+           <height>121</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="pixmap">
+          <pixmap>../assets/ttp-26Jul-00025.jpeg</pixmap>
+         </property>
+         <property name="scaledContents">
+          <bool>true</bool>
+         </property>
+         <property name="wordWrap">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="widget_18" native="true">
+        <property name="geometry">
+         <rect>
+          <x>350</x>
+          <y>260</y>
+          <width>281</width>
+          <height>121</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background:rgb(85, 255, 255)</string>
+        </property>
+        <widget class="QWidget" name="widget_19" native="true">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>161</width>
+           <height>121</height>
+          </rect>
+         </property>
+         <widget class="QLabel" name="label_24">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>161</width>
+            <height>121</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap>../assets/dao-tao-nghe-thu-cung7.jpg</pixmap>
+          </property>
+          <property name="scaledContents">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QLabel" name="label_25">
+         <property name="geometry">
+          <rect>
+           <x>190</x>
+           <y>0</y>
+           <width>51</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>tại cửa hàng</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_26">
+         <property name="geometry">
+          <rect>
+           <x>170</x>
+           <y>30</y>
+           <width>111</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Cửa hàng chăm sóc thú cưng rất tốt, các dịch vụ làm trên thú cưng rất sạch sẽ</string>
+         </property>
+         <property name="wordWrap">
+          <bool>true</bool>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_27">
+         <property name="geometry">
+          <rect>
+           <x>180</x>
+           <y>80</y>
+           <width>81</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>12 triệu đồng/1 tháng</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="dat2">
+         <property name="geometry">
+          <rect>
+           <x>190</x>
+           <y>100</y>
+           <width>56</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Đặt</string>
+         </property>
+        </widget>
        </widget>
       </widget>
       <widget class="QWidget" name="timkiem_p">
