@@ -1,11 +1,12 @@
+from entities.user import User
+from entities.users import UserList
 from PyQt6.QtWidgets import QMainWindow, QMessageBox
 import sys
 from PyQt6 import uic
 import os
 import re
 
-# mock data
-account = {"fullname": "", "email": "", "password": ""}
+
 
 
 class SignupPage(QMainWindow):
@@ -53,10 +54,14 @@ class SignupPage(QMainWindow):
             return  # khong lam gi nua
         else:
             # luu tai khoan
-            account["fullname"] = fullname_input
-            account["email"] = email_input
-            account["password"] = password_input
-            # thanh cong -> chuyen sang home
+            # 1. tao user
+            new_user = User(username=fullname_input, email=email_input, password=password_input)
+            # 2. luu vao danh sach
+            user_list = UserList()
+            user_list.add_user(new_user)
+            # 3. luu json
+            user_list.save_to_json("data/user.json") 
+          
             self.__goto_home()
 
     def goto_login(self):
