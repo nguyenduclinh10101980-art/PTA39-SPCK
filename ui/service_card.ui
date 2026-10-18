@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>200</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: yellow;</string>
+  </property>
+  <layout class="QVBoxLayout" name="bo_cuc_doc">
+   <item>
+    <widget class="QLabel" name="ten_dich_vu">
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Chăm tại nhà</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="danh_gia">
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>30</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>⭐ ⭐ ⭐ ⭐ ⭐ (32 lượt)</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="mo_ta">
+     <property name="text">
+      <string>GREEN GARDEN, GREEN VILLA Khu vườn có tự nhiên rộng 200m² được rào chắn cực kỳ an toàn. Thích hợp cho những bé cún ưa vận động, chạy nhảy và muốn hòa nhập giao lưu với các bạn cún thân thiện khác để giải tỏa căng thẳng.</string>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="gia">
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>180.000 VNĐ/ngày</string>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="nut_dat_dich_vu">
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: red;
+color:white;</string>
+     </property>
+     <property name="text">
+      <string>Đặt dịch vụ</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,29 @@
+[
+    {
+        "ma": 1,
+        "ten": "Chăm tại nhà",
+        "so_sao": 5,
+        "so_luot_danh_gia": 32,
+        "mo_ta": "GREEN GARDEN, GREEN VILLA Khu vườn có tự nhiên rộng 200m² được rào chắn cực kỳ an toàn. Thích hợp cho những bé cún ưa vận động, chạy nhảy và muốn hòa nhập giao lưu với các bạn cún thân thiện khác để giải tỏa căng thẳng.",
+        "gia": 180000,
+        "don_vi": "ngày"
+    },
+    {
+        "ma": 2,
+        "ten": "Chăm tại cửa hàng",
+        "so_sao": 4,
+        "so_luot_danh_gia": 18,
+        "mo_ta": "Gửi bé tại trung tâm chăm sóc, có nhân viên theo dõi 24/7 và cập nhật hình ảnh, video mỗi ngày.",
+        "gia": 150000,
+        "don_vi": "ngày"
+    },
+    {
+        "ma": 3,
+        "ten": "Grooming (tắm & cắt tỉa)",
+        "so_sao": 5,
+        "so_luot_danh_gia": 25,
+        "mo_ta": "Tắm, sấy, cắt tỉa lông, vệ sinh tai và cắt móng cho bé.",
+        "gia": 250000,
+        "don_vi": "lần"
+    }
+]

@@ -1,0 +1,34 @@
+[
+    {
+        "ma": 1,
+        "email_chu": "diep@gmail.com",
+        "ten": "Didi",
+        "ngay_sinh": "14/01/2026",
+        "loai": "Mèo",
+        "ghi_chu": ""
+    },
+    {
+        "ma": 2,
+        "email_chu": "diep@gmail.com",
+        "ten": "Lulu",
+        "ngay_sinh": "14/01/2026",
+        "loai": "Chó",
+        "ghi_chu": ""
+    },
+    {
+        "ma": 3,
+        "email_chu": "nguyenductrunghieu6@gmail.com",
+        "ten": "bug nâu",
+        "ngay_sinh": "18/10/2026",
+        "loai": "Chó",
+        "ghi_chu": "không có"
+    },
+    {
+        "ma": 4,
+        "email_chu": "nguyenductrunghieu6@gmail.com",
+        "ten": "mèo nâu",
+        "ngay_sinh": "18/10/2026",
+        "loai": "Mèo",
+        "ghi_chu": "không có"
+    }
+]

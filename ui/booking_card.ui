@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>70</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QPushButton {
+	background: #FFE082;
+	border: none;
+	border-radius: 5px;
+	padding: 5px;
+	min-width: 50px;
+	max-width: 50px;
+}
+QPushButton:hover {
+	background: #FFC107;
+}</string>
+  </property>
+  <layout class="QHBoxLayout" name="bo_cuc_ngang">
+   <item>
+    <layout class="QVBoxLayout" name="bo_cuc_thong_tin">
+     <item>
+      <widget class="QLabel" name="dich_vu_va_thu_cung">
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Chăm tại nhà - Milo</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="thoi_gian_va_ghi_chu">
+       <property name="text">
+        <string>20/10/2026 09:00 - Ghi chú</string>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QPushButton" name="nut_huy_lich">
+     <property name="text">
+      <string>Huỷ</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

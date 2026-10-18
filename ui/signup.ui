@@ -23,7 +23,7 @@
    <string notr="true">background-color: rgb(255, 255, 255);</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QLabel" name="welcome">
+   <widget class="QLabel" name="loi_chao">
     <property name="geometry">
      <rect>
       <x>100</x>
@@ -51,7 +51,7 @@
      <string>Welcome to Home Pet Care</string>
     </property>
    </widget>
-   <widget class="QStackedWidget" name="specialcare">
+   <widget class="QStackedWidget" name="trang_tri_1">
     <property name="geometry">
      <rect>
       <x>20</x>
@@ -67,10 +67,10 @@ rgb(112, 255, 191)</string>
     <property name="currentIndex">
      <number>0</number>
     </property>
-    <widget class="QWidget" name="page"/>
-    <widget class="QWidget" name="page_2"/>
+    <widget class="QWidget" name="trang_tri_1a"/>
+    <widget class="QWidget" name="trang_tri_1b"/>
    </widget>
-   <widget class="QStackedWidget" name="stackedWidget">
+   <widget class="QStackedWidget" name="trang_tri_2">
     <property name="geometry">
      <rect>
       <x>290</x>
@@ -82,9 +82,9 @@ rgb(112, 255, 191)</string>
     <property name="currentIndex">
      <number>1</number>
     </property>
-    <widget class="QWidget" name="page_3"/>
-    <widget class="QWidget" name="page_4">
-     <widget class="QLabel" name="label_4">
+    <widget class="QWidget" name="trang_tri_2a"/>
+    <widget class="QWidget" name="trang_tri_2b">
+     <widget class="QLabel" name="nhan_trang_tri">
       <property name="geometry">
        <rect>
         <x>40</x>
@@ -99,7 +99,7 @@ rgb(112, 255, 191)</string>
      </widget>
     </widget>
    </widget>
-   <widget class="QWidget" name="widget" native="true">
+   <widget class="QWidget" name="khung_form" native="true">
     <property name="geometry">
      <rect>
       <x>30</x>
@@ -111,7 +111,7 @@ rgb(112, 255, 191)</string>
     <property name="styleSheet">
      <string notr="true"/>
     </property>
-    <widget class="QWidget" name="verticalLayoutWidget">
+    <widget class="QWidget" name="khung_nhap">
      <property name="geometry">
       <rect>
        <x>0</x>
@@ -120,9 +120,9 @@ rgb(112, 255, 191)</string>
        <height>311</height>
       </rect>
      </property>
-     <layout class="QVBoxLayout" name="verticalLayout">
+     <layout class="QVBoxLayout" name="bo_cuc_doc">
       <item>
-       <widget class="QLabel" name="label_6">
+       <widget class="QLabel" name="nhan_email">
         <property name="styleSheet">
          <string notr="true">font: 12pt &quot;MS Shell Dlg 2&quot;;</string>
         </property>
@@ -132,10 +132,10 @@ rgb(112, 255, 191)</string>
        </widget>
       </item>
       <item>
-       <widget class="QLineEdit" name="email"/>
+       <widget class="QLineEdit" name="o_email"/>
       </item>
       <item>
-       <widget class="QLabel" name="label_2">
+       <widget class="QLabel" name="nhan_ho_ten">
         <property name="styleSheet">
          <string notr="true">font: 75 12pt &quot;MS Shell Dlg 2&quot;;</string>
         </property>
@@ -145,10 +145,10 @@ rgb(112, 255, 191)</string>
        </widget>
       </item>
       <item>
-       <widget class="QLineEdit" name="fullname"/>
+       <widget class="QLineEdit" name="o_ho_ten"/>
       </item>
       <item>
-       <widget class="QLabel" name="label_5">
+       <widget class="QLabel" name="nhan_mat_khau">
         <property name="styleSheet">
          <string notr="true">font: 12pt &quot;MS Shell Dlg 2&quot;;</string>
         </property>
@@ -158,7 +158,7 @@ rgb(112, 255, 191)</string>
        </widget>
       </item>
       <item>
-       <widget class="QLineEdit" name="password">
+       <widget class="QLineEdit" name="o_mat_khau">
         <property name="font">
          <font>
           <underline>false</underline>
@@ -176,7 +176,7 @@ rgb(112, 255, 191)</string>
        </widget>
       </item>
       <item>
-       <widget class="QLabel" name="label_3">
+       <widget class="QLabel" name="nhan_nhap_lai_mat_khau">
         <property name="styleSheet">
          <string notr="true">font: 12pt &quot;MS Shell Dlg 2&quot;;</string>
         </property>
@@ -186,14 +186,14 @@ rgb(112, 255, 191)</string>
        </widget>
       </item>
       <item>
-       <widget class="QLineEdit" name="confirm_password">
+       <widget class="QLineEdit" name="o_nhap_lai_mat_khau">
         <property name="echoMode">
          <enum>QLineEdit::Password</enum>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="QLabel" name="label_7">
+       <widget class="QLabel" name="khoang_cach">
         <property name="styleSheet">
          <string notr="true">font: 8pt &quot;MS Shell Dlg 2&quot;;
 text-decoration: underline;
@@ -205,7 +205,7 @@ color: rgb(88, 110, 255);</string>
        </widget>
       </item>
       <item>
-       <widget class="QPushButton" name="signupbutton">
+       <widget class="QPushButton" name="nut_dang_ky">
         <property name="styleSheet">
          <string notr="true">font: 12pt &quot;MS Shell Dlg 2&quot;;
 background-color: rgb(223, 223, 223);</string>
@@ -216,7 +216,7 @@ background-color: rgb(223, 223, 223);</string>
        </widget>
       </item>
       <item>
-       <widget class="QPushButton" name="login">
+       <widget class="QPushButton" name="nut_chuyen_dang_nhap">
         <property name="text">
          <string>Login</string>
         </property>
@@ -224,7 +224,7 @@ background-color: rgb(223, 223, 223);</string>
       </item>
      </layout>
     </widget>
-    <widget class="QLabel" name="label">
+    <widget class="QLabel" name="hinh_nguoi">
      <property name="geometry">
       <rect>
        <x>190</x>
@@ -237,7 +237,7 @@ background-color: rgb(223, 223, 223);</string>
       <string/>
      </property>
      <property name="pixmap">
-      <pixmap>../../person.png</pixmap>
+      <pixmap>../assets/icons/icon.png</pixmap>
      </property>
      <property name="scaledContents">
       <bool>true</bool>
@@ -245,7 +245,7 @@ background-color: rgb(223, 223, 223);</string>
     </widget>
    </widget>
   </widget>
-  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QStatusBar" name="thanh_trang_thai"/>
  </widget>
  <resources/>
  <connections/>
